@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { Menu, X, Instagram } from "lucide-react"
+import { Menu, Instagram } from "lucide-react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useState } from "react"
@@ -67,19 +67,15 @@ export default function Header() {
 
           {/* Right side */}
           <div className="flex items-center space-x-4">
-            <Button
-              variant="outline"
-              className="hidden sm:flex bg-white/20 backdrop-blur-sm text-white border-white/30 hover:bg-white/30 transition-all duration-200 shadow-md"
-            >
-              LOGIN
-            </Button>
             <div className="hidden sm:flex space-x-3">
-              <div className="p-2 hover:bg-white/20 rounded-full transition-colors duration-200 cursor-pointer backdrop-blur-sm">
-                <X className="w-5 h-5" />
-              </div>
-              <div className="p-2 hover:bg-white/20 rounded-full transition-colors duration-200 cursor-pointer backdrop-blur-sm">
+              <a
+                href="https://www.instagram.com/swasthya_saathi/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 hover:bg-white/20 rounded-full transition-colors duration-200 cursor-pointer backdrop-blur-sm"
+              >
                 <Instagram className="w-5 h-5" />
-              </div>
+              </a>
             </div>
 
             {/* Mobile Menu */}
@@ -103,7 +99,15 @@ export default function Header() {
                       {item.label}
                     </Link>
                   ))}
-                  <Button className="bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white mt-6 border border-white/30">LOGIN</Button>
+                  <a
+                    href="https://www.instagram.com/swasthya_saathi/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-2 text-lg font-medium transition-colors duration-200 hover:text-blue-200"
+                  >
+                    <Instagram className="w-5 h-5" />
+                    <span>Follow us on Instagram</span>
+                  </a>
                 </div>
               </SheetContent>
             </Sheet>

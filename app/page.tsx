@@ -64,7 +64,7 @@ export default function HomePage() {
                 className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-0 shadow-lg"
               >
                 <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                     <feature.icon className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-800 mb-4">{feature.title}</h3>
@@ -77,7 +77,7 @@ export default function HomePage() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
+      <section className="py-20 bg-gradient-to-r from-purple-600 to-pink-600 text-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Our Impact in Numbers</h2>
@@ -88,7 +88,7 @@ export default function HomePage() {
             {stats.map((stat, index) => (
               <div key={index} className="text-center group">
                 <div className="bg-white/10 rounded-2xl p-8 backdrop-blur-sm group-hover:bg-white/20 transition-all duration-300">
-                  <h3 className="text-4xl font-bold text-orange-300 mb-2">{stat.number}</h3>
+                                     <h3 className="text-4xl font-bold text-blue-300 mb-2">{stat.number}</h3>
                   <p className="text-blue-100 text-lg">{stat.label}</p>
                 </div>
               </div>
@@ -126,13 +126,13 @@ export default function HomePage() {
               },
             ].map((service, index) => (
               <Card key={index} className="group hover:shadow-xl transition-all duration-300 overflow-hidden">
-                <div className="h-48 bg-gradient-to-br from-blue-100 to-blue-200 relative overflow-hidden">
+                <div className="h-48 bg-gradient-to-br from-purple-100 to-pink-100 relative overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold text-gray-800 mb-3">{service.title}</h3>
                   <p className="text-gray-600 mb-4">{service.description}</p>
-                  <Button variant="ghost" className="text-blue-600 hover:text-blue-700 p-0">
+                  <Button variant="ghost" className="text-purple-600 hover:text-purple-700 p-0">
                     Learn More <ArrowRight className="ml-2 w-4 h-4" />
                   </Button>
                 </CardContent>
@@ -143,7 +143,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-orange-500 to-orange-600 text-white">
+      <section className="py-20 bg-gradient-to-r from-blue-500 to-blue-600 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-6">Ready to Start Your Health Journey?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
@@ -152,14 +152,14 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               size="lg"
-              className="bg-white text-orange-600 hover:bg-gray-100 shadow-xl transform hover:scale-105 transition-all duration-200"
+              className="bg-white text-blue-600 hover:bg-gray-100 shadow-xl transform hover:scale-105 transition-all duration-200"
             >
               Book Appointment
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="border-2 border-white text-white hover:bg-white hover:text-orange-600 shadow-xl transform hover:scale-105 transition-all duration-200 bg-transparent"
+              className="border-2 border-white text-white hover:bg-white hover:text-blue-600 shadow-xl transform hover:scale-105 transition-all duration-200 bg-transparent"
             >
               Contact Us
             </Button>

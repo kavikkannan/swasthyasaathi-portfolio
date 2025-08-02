@@ -3,33 +3,31 @@ import Footer from "@/components/footer"
 import HeroSection from "@/components/hero-section"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Users, Award, Calendar, MapPin, GraduationCap, Heart, Star, CheckCircle } from "lucide-react"
+import { Users, Award, Calendar, MapPin, Star, CheckCircle } from "lucide-react"
+import TeamMemberCard from "./TeamMemberCard"
 
 export default function AboutPage() {
   const team = [
     {
-      name: "Dr. Rajesh Kumar",
-      role: "Founder & Chief Medical Officer",
-      education: "MBBS, MD - AIIMS New Delhi",
-      experience: "15+ years",
-      specialization: "Community Medicine & Public Health",
-      image: "/placeholder.svg?height=300&width=300",
-    },
-    {
-      name: "Dr. Priya Sharma",
-      role: "Director of Operations",
-      education: "MBBS, MPH - AIIMS New Delhi",
-      experience: "12+ years",
-      specialization: "Healthcare Management & Policy",
-      image: "/placeholder.svg?height=300&width=300",
-    },
-    {
-      name: "Dr. Amit Patel",
-      role: "Head of Community Programs",
-      education: "MBBS, DPH - AIIMS New Delhi",
+      name: "Dr. Tanmay Motiwala",
+      education: "MBBS, MS MCH (Pediatric Surgeon), AIIMS",
       experience: "10+ years",
-      specialization: "Preventive Medicine & Epidemiology",
-      image: "/placeholder.svg?height=300&width=300",
+      specialization: "Pediatric Surgery",
+      image: "https://schoolhealthpro.com/wp-content/uploads/2024/03/Copy-of-TEAM-FINAL2.png",
+    },
+    {
+      name: "Dr. Ram Khemka",
+      education: "MBBS, MS Orthopedics, Raipur",
+      experience: "10+ years",
+      specialization: "Orthopedics",
+      image: "https://schoolhealthpro.com/wp-content/uploads/2024/03/Copy-of-TEAM-FINAL2.png",
+    },
+    {
+      name: "Dr. Radhey Singh",
+      education: "MBBS, MS General Surgery, AIIMS Jodhpur",
+      experience: "10+ years",
+      specialization: "General Surgery",
+      image: "https://schoolhealthpro.com/wp-content/uploads/2024/03/Copy-of-TEAM-FINAL6.png",
     },
   ]
 
@@ -128,7 +126,7 @@ export default function AboutPage() {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-800 mb-4">Our Leadership Team</h2>
+            <h2 className="text-4xl font-bold text-gray-800 mb-4">Our Founding Team</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Meet the experienced healthcare professionals leading SwasthyaSaathi's mission to transform community
               health.
@@ -137,32 +135,7 @@ export default function AboutPage() {
 
           <div className="grid md:grid-cols-3 gap-8">
             {team.map((member, index) => (
-              <Card
-                key={index}
-                className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-0 shadow-lg overflow-hidden"
-              >
-                <div className="h-64 bg-gradient-to-br from-blue-100 to-orange-100 relative">
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                </div>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">{member.name}</h3>
-                  <p className="text-blue-600 font-semibold mb-3">{member.role}</p>
-                  <div className="space-y-2 text-sm text-gray-600">
-                    <div className="flex items-center">
-                      <GraduationCap className="w-4 h-4 mr-2 text-orange-500" />
-                      <span>{member.education}</span>
-                    </div>
-                    <div className="flex items-center">
-                      <Calendar className="w-4 h-4 mr-2 text-orange-500" />
-                      <span>{member.experience} Experience</span>
-                    </div>
-                    <div className="flex items-start">
-                      <Heart className="w-4 h-4 mr-2 text-orange-500 mt-0.5 flex-shrink-0" />
-                      <span>{member.specialization}</span>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
+              <TeamMemberCard key={index} member={member} />
             ))}
           </div>
         </div>

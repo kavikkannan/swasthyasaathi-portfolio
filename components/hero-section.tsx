@@ -1,62 +1,81 @@
 import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
+import { ArrowRight, Heart, Shield, Users } from "lucide-react"
 
 interface HeroSectionProps {
   title: string
   subtitle: string
-  description?: string
-  showCTA?: boolean
-  backgroundImage?: string
+  description: string
+  buttonText?: string
+  buttonLink?: string
+  showStats?: boolean
 }
 
 export default function HeroSection({
   title,
   subtitle,
   description,
-  showCTA = false,
-  backgroundImage = "/placeholder.svg?height=600&width=1200",
+  buttonText = "Learn More",
+  buttonLink = "#",
+  showStats = false,
 }: HeroSectionProps) {
   return (
-    <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-purple-500 via-pink-500 to-blue-500">
-        <div className="absolute inset-0 bg-black/10"></div>
-        <div className="absolute inset-0 bg-gradient-to-r from-purple-500/80 to-transparent"></div>
+    <section className="relative min-h-[60vh] flex items-center justify-center glossy-blue overflow-hidden">
+      {/* Background decorative elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-white/10 rounded-full blur-3xl floating"></div>
+        <div
+          className="absolute -bottom-40 -left-40 w-80 h-80 bg-white/10 rounded-full blur-3xl floating"
+          style={{ animationDelay: "1s" }}
+        ></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
       </div>
 
-      {/* Decorative Elements */}
-      <div className="absolute top-20 right-20 w-32 h-32 bg-pink-400/20 rounded-full blur-xl"></div>
-      <div className="absolute bottom-20 left-20 w-24 h-24 bg-purple-400/20 rounded-full blur-xl"></div>
-      <div className="absolute top-1/2 right-1/3 w-16 h-16 bg-blue-400/20 rounded-full blur-lg"></div>
+      <div className="container mx-auto px-4 py-20 relative z-10">
+        <div className="max-w-4xl mx-auto text-center">
+          {/* Subtitle */}
+          <p className="text-blue-100 text-sm md:text-base font-medium mb-4 tracking-wide uppercase">{subtitle}</p>
 
-      {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 text-center text-white">
-        <div className="max-w-4xl mx-auto space-y-6">
-          <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-            <span className="bg-gradient-to-r from-white via-blue-100 to-pink-100 bg-clip-text text-transparent">
-              {title}
-            </span>
-          </h1>
-          <h2 className="text-2xl md:text-3xl font-semibold text-blue-200">{subtitle}</h2>
-          {description && (
-            <p className="text-lg md:text-xl text-blue-100 max-w-2xl mx-auto leading-relaxed">{description}</p>
-          )}
-          {showCTA && (
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-              <Button
-                size="lg"
-                className="bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white shadow-xl transform hover:scale-105 transition-all duration-200 border border-white/30"
-              >
-                Get Started
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-2 border-white/50 text-white hover:bg-white/20 shadow-xl transform hover:scale-105 transition-all duration-200 bg-transparent backdrop-blur-sm"
-              >
-                Learn More
-              </Button>
+          {/* Main Title */}
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">{title}</h1>
+
+          {/* Description */}
+          <p className="text-blue-100 text-lg md:text-xl mb-8 max-w-3xl mx-auto leading-relaxed">{description}</p>
+
+          {/* CTA Button */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+            <Button
+              size="lg"
+              className="bg-white text-blue-600 hover:bg-blue-50 font-semibold px-8 py-3 rounded-full hover-scale group"
+            >
+              {buttonText}
+              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            </Button>
+          </div>
+
+          {/* Stats Section */}
+          {showStats && (
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
+              <div className="text-center glass-effect rounded-lg p-6 hover-scale">
+                <div className="inline-flex items-center justify-center w-12 h-12 bg-white/20 rounded-full mb-4">
+                  <Heart className="h-6 w-6 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-2">10,000+</h3>
+                <p className="text-blue-100 text-sm">Students Screened</p>
+              </div>
+              <div className="text-center glass-effect rounded-lg p-6 hover-scale">
+                <div className="inline-flex items-center justify-center w-12 h-12 bg-white/20 rounded-full mb-4">
+                  <Shield className="h-6 w-6 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-2">500+</h3>
+                <p className="text-blue-100 text-sm">Schools Partnered</p>
+              </div>
+              <div className="text-center glass-effect rounded-lg p-6 hover-scale">
+                <div className="inline-flex items-center justify-center w-12 h-12 bg-white/20 rounded-full mb-4">
+                  <Users className="h-6 w-6 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-2">50+</h3>
+                <p className="text-blue-100 text-sm">Expert Doctors</p>
+              </div>
             </div>
           )}
         </div>

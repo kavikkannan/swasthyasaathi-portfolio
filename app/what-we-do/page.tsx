@@ -3,6 +3,7 @@ import Footer from "@/components/footer"
 import HeroSection from "@/components/hero-section"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
+import { DownloadButton } from "@/components/DownloadButton"
 import {
   Stethoscope,
   Users,
@@ -230,13 +231,7 @@ export default function WhatWeDoPage() {
             >
               Book Consultation
             </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-2 border-white text-white hover:bg-white hover:text-blue-600 shadow-xl transform hover:scale-105 transition-all duration-200 bg-transparent"
-            >
-              View Programs
-            </Button>
+            <DownloadButton />
           </div>
         </div>
       </section>

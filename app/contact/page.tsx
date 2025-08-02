@@ -23,9 +23,9 @@ export default function ContactPage() {
       {/* Contact Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="flex gap-12">
             {/* Contact Information */}
-            <div className="space-y-8">
+            <div className="space-y-8 ">
               <div>
                 <h2 className="text-3xl font-bold text-gray-800 mb-6">Let's Connect</h2>
                 <p className="text-lg text-gray-600 leading-relaxed mb-8">
@@ -34,7 +34,7 @@ export default function ContactPage() {
                 </p>
               </div>
 
-              <div className="space-y-6">
+              <div className="space-y-6 grid grid-cols-2 gap-6">
                 <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
@@ -44,9 +44,11 @@ export default function ContactPage() {
                       <div>
                         <h3 className="text-lg font-semibold text-gray-800 mb-2">Visit Our Office</h3>
                         <p className="text-gray-600">
-                          159A Yusuf Sarai, Gautam Nagar
+                          Mandi Rd, Near Ganj Mandi, Pandri,
                           <br />
-                          New Delhi - 110049
+                          behind sector 5, Devendra Nagar,
+                          <br />
+                          Raipur, Chhattisgarh 492001
                           <br />
                           India
                         </p>
@@ -64,11 +66,11 @@ export default function ContactPage() {
                       <div>
                         <h3 className="text-lg font-semibold text-gray-800 mb-2">Email Us</h3>
                         <p className="text-gray-600">
-                          General Inquiries: info@swasthyasaathi.org
+                          General Inquiries: info@swasthyasathi.com
                           <br />
-                          Medical Services: medical@swasthyasaathi.org
+                          Website: www.swasthyasathi.com
                           <br />
-                          Partnerships: partners@swasthyasaathi.org
+                          Medical Services: medical@swasthyasathi.com
                         </p>
                       </div>
                     </div>
@@ -118,7 +120,7 @@ export default function ContactPage() {
             </div>
 
             {/* Contact Form */}
-            <div>
+            {/* <div>
               <Card className="border-0 shadow-xl">
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold text-gray-800 mb-6">Send Us a Message</h3>
@@ -211,7 +213,7 @@ export default function ContactPage() {
                   </form>
                 </CardContent>
               </Card>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

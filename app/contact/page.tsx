@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent } from "@/components/ui/card"
-import { MapPin, Mail, Phone, Clock, Send } from "lucide-react"
+import { MapPin, Mail, Phone, Clock } from "lucide-react"
 
 export default function ContactPage() {
   return (
@@ -34,7 +34,7 @@ export default function ContactPage() {
                 </p>
               </div>
 
-              <div className="space-y-6 grid grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
@@ -119,101 +119,6 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* Contact Form */}
-            {/* <div>
-              <Card className="border-0 shadow-xl">
-                <CardContent className="p-8">
-                  <h3 className="text-2xl font-bold text-gray-800 mb-6">Send Us a Message</h3>
-                  <form className="space-y-6">
-                    <div className="grid md:grid-cols-2 gap-6">
-                      <div>
-                        <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">
-                          First Name *
-                        </label>
-                        <Input
-                          id="firstName"
-                          type="text"
-                          required
-                          className="w-full border-gray-300 focus:border-blue-500 focus:ring-blue-500"
-                          placeholder="Enter your first name"
-                        />
-                      </div>
-                      <div>
-                        <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-2">
-                          Last Name *
-                        </label>
-                        <Input
-                          id="lastName"
-                          type="text"
-                          required
-                          className="w-full border-gray-300 focus:border-blue-500 focus:ring-blue-500"
-                          placeholder="Enter your last name"
-                        />
-                      </div>
-                    </div>
-
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                        Email Address *
-                      </label>
-                      <Input
-                        id="email"
-                        type="email"
-                        required
-                        className="w-full border-gray-300 focus:border-blue-500 focus:ring-blue-500"
-                        placeholder="Enter your email address"
-                      />
-                    </div>
-
-                    <div>
-                      <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                        Phone Number
-                      </label>
-                      <Input
-                        id="phone"
-                        type="tel"
-                        className="w-full border-gray-300 focus:border-blue-500 focus:ring-blue-500"
-                        placeholder="+91 98765 43210"
-                      />
-                    </div>
-
-                    <div>
-                      <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
-                        Subject *
-                      </label>
-                      <Input
-                        id="subject"
-                        type="text"
-                        required
-                        className="w-full border-gray-300 focus:border-blue-500 focus:ring-blue-500"
-                        placeholder="What is this regarding?"
-                      />
-                    </div>
-
-                    <div>
-                      <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                        Message *
-                      </label>
-                      <Textarea
-                        id="message"
-                        required
-                        rows={5}
-                        className="w-full border-gray-300 focus:border-blue-500 focus:ring-blue-500 resize-none"
-                        placeholder="Tell us how we can help you..."
-                      />
-                    </div>
-
-                    <Button
-                      type="submit"
-                      className="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white py-3 shadow-lg transform hover:scale-105 transition-all duration-200"
-                    >
-                      <Send className="w-5 h-5 mr-2" />
-                      Send Message
-                    </Button>
-                  </form>
-                </CardContent>
-              </Card>
-            </div> */}
           </div>
         </div>
       </section>

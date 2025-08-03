@@ -6,19 +6,18 @@ import {
   Stethoscope,
   Eye,
   Ear,
-  Brain,
-  Smile,
-  Heart,
   BrainCircuit,
-  Baby,
+  Heart,
   Bone,
-  Ambulance,
+  
   X,
-  Apple,
-  FileText,
-  Star,
   Activity,
-  ArrowRight
+  Layers,
+  Scissors,
+  Award,
+  ArrowRight,
+  Brain,
+  User
 } from "lucide-react";
 
 interface Member {
@@ -42,60 +41,67 @@ export default function SpecialistCards() {
     { 
       icon: Stethoscope, 
       title: "Pediatricians", 
-      count: "5", 
+      count: "6", 
       color: "from-blue-600 to-blue-700", 
       members: [
-        { name: "Dr. John Doe", position: "Pediatrician" },
-        { name: "Dr. Jane Smith", position: "Pediatrician" },
-        { name: "Dr. Michael Johnson", position: "Pediatrician" },
-        { name: "Dr. Sarah Williams", position: "Pediatrician" },
-        { name: "Dr. David Brown", position: "Pediatrician" },
+        { name: "Dr. Harshita", position: "Bamnawat MBBS MD (Pediatrics) AIIMS Delhi" },
+        { name: "Dr. Doreswamy", position: "MBBS, MD Pediatrics, AIIMS" },
+        { name: "Dr. Shantanu", position: "MBBS. MO, (Pediatrics), Fellowship Neonatology (Wadia Hospital Mumbai)" },
+        { name: "Dr. Lokesh Choundhary", position: "MBBS, MD (Pediatrics), PGIMER ChandigarhT" },
+        { name: "Dr. Choundri Muzafar Paswal", position: "(AIIMS) MD Pediatrics, DM Neonatology Gold Medalist" },
+        { name: "Dr. Animesh Gandhi", position: "MBBS, MD Pediatrics" },
       ] 
     },
     { 
       icon: Eye, 
       title: "Ophthalmologists", 
-      count: "1", 
+      count: "2", 
       color: "from-green-600 to-green-700", 
       members: [
-        { name: "Dr. Emily Chen", position: "Ophthalmologist" },
-        { name: "Dr. Robert Taylor", position: "Ophthalmologist" },
+        { name: "Dr. Sonalika Gogia Malhotra ", position: "MBBS, MS Ophthalmology AIIMS, FLVPEL (Pediatric Ophthalmology and Nuero-Ophthalm010gy)"
+         },
+         { name: "Dr Shruti Tambe", position: "MBBS, MD Ophthalmolgy, Nair Mumbai"
+         },
       ]
     },
     { 
       icon: Ear, 
       title: "ENT Specialists", 
-      count: "3", 
+      count: "5", 
       color: "from-purple-600 to-purple-700", 
       members: [
-        { name: "Dr. Lisa Wang", position: "ENT Specialist" },
-        { name: "Dr. Kevin Patel", position: "Otolaryngologist" },
-        { name: "Dr. Maria Garcia", position: "ENT Surgeon" }
+        { name: "Dr Aman Verma ", position: "MBBS. MS ENT (AIIMS)" },
+        { name: "Dr. Nitika Goyal", position: "MBBS, MS ENT, AIIMS" },
+        { name: "Dr Anubhav Raj", position: "MBBS. MS ENT, AIIMS" },
+        { name: "Dr Sagar V. Jani ", position: "MBBS, MS ENT" },
+        { name: "Dr. Deepika", position: "MBBS, MS ENT (AIIMS)" },
       ]
     },
     { 
-      icon: Brain, 
+      icon: BrainCircuit, 
       title: "Psychiatrists", 
       count: "4", 
       color: "from-red-600 to-red-700", 
       members: [
-        { name: "Dr. Sarah Williams", position: "Psychiatrist" },
-        { name: "Dr. David Brown", position: "Child Psychiatrist" },
-        { name: "Dr. Lisa Ray", position: "Psychiatrist" },
-        { name: "Dr. Alex Turner", position: "Clinical Psychologist" }
+        { name: "Dr. Aditya Agrawal", position: "MBBS, MD Psychiatry (AIIMS) KGMU" },
+        { name: "Dr. Apurva Mehra", position: "MBBS, MD Psychiatry, GMCH, Udaipur" },
+        { name: "Dr, Gauri Gupta", position: "MBBS, MD Psychiatry" },
+        { name: "Dr. Vidisha Singh", position: "MBBS, MD Psychiatry" }
       ]
     },
     { 
-      icon: Smile, 
+      icon: Activity, 
       title: "Dental Specialists", 
-      count: "9", 
+      count: "2", 
       color: "from-teal-600 to-teal-700", 
       members: [
-        { name: "Dr. Robert Chen", position: "Pediatric Dentist" },
-        { name: "Dr. Emily White", position: "Orthodontist" },
-        { name: "Dr. Michael Brown", position: "Dental Surgeon" }
+        { name: "Dr, Divya Dasani", position: "BDS Dentistry" },
+        { name: "Dr. Divya Jain ", position: "BDS Dentistry" },
       ]
     },
+
+
+
     { 
       icon: Heart, 
       title: "Cardiologists", 
@@ -109,7 +115,7 @@ export default function SpecialistCards() {
       ]
     },
     { 
-      icon: BrainCircuit, 
+      icon: Brain, 
       title: "Mental Health Experts", 
       count: "5", 
       color: "from-indigo-600 to-indigo-700", 
@@ -121,15 +127,48 @@ export default function SpecialistCards() {
         { name: "Dr. Emily Wilson", position: "Art Therapist" }
       ]
     },
+
+
+
     { 
-      icon: Baby, 
+      icon: User, 
       title: "Gynaecologists", 
       count: "3", 
       color: "from-rose-600 to-rose-700", 
       members: [
-        { name: "Dr. Sarah Johnson", position: "Gynecologist" },
-        { name: "Dr. Lisa Wong", position: "Obstetrician" },
-        { name: "Dr. Rachel Green", position: "Reproductive Specialist" }
+        { name: "Dr. Kalika Dubey", position: "MBBS, MS Obs & Gyne (AIIMS)" },
+        { name: "Dr. Richa Agrawal Motiwala", position: "MBBS, MS Obstetrics and Gynaecology Ex Consultant Apollo Bilaspur" },
+        { name: "Dr. palak Dewan", position: "MS (Obs & Gyn)" }
+
+      ]
+    },
+    { 
+      icon: Layers, 
+      title: "Dermatology", 
+      count: "1", 
+      color: "from-rose-600 to-rose-700", 
+      members: [
+        { name: "Dr. Ravi Mudgal", position: "MBBS MD. DNB FRGUHS Dermatology, AIIMS" },
+      ]
+    },
+    { 
+      icon: Activity, 
+      title: "Endodontics", 
+      count: "1", 
+      color: "from-rose-600 to-rose-700", 
+      members: [
+        { name: "Dr. Ashish Choudhary ", position: "BDS. MDS Endodontics. (ALMS)" },
+
+      ]
+    },
+    { 
+      icon: Activity, 
+      title: "Maxillofacial Prosthodontics & Implantology", 
+      count: "1", 
+      color: "from-rose-600 to-rose-700", 
+      members: [
+        { name: "Dr. Priyesh Gupta", position: "BDS, MDS (Maxillofacial Prosthodontics) & Implantology" },
+
       ]
     },
     { 
@@ -138,21 +177,51 @@ export default function SpecialistCards() {
       count: "3", 
       color: "from-amber-600 to-amber-700", 
       members: [
-        { name: "Dr. Robert Chen", position: "Orthopedic Surgeon" },
-        { name: "Dr. Emily White", position: "Sports Medicine" },
-        { name: "Dr. Michael Brown", position: "Pediatric Orthopedist" }
+        { name: "Dr. Nehal Saraf", position: "BOS, MDS (Orthodontics & dentofacial orthopedics)" },
+        { name: "Dr. Md. Ashraf Jamal", position: "MBBS, MS Orthopedics (AIIMS)" },
+        { name: "Dr. Tanvi Bhatt (PT) ", position: "MPT (Orthopaedics)" },
       ]
     },
     { 
-      icon: Ambulance, 
-      title: "Emergency Medicine", 
-      count: "4", 
+      icon: Scissors, 
+      title: "General Surgeon", 
+      count: "1", 
+      color: "from-amber-600 to-amber-700", 
+      members: [
+        { name: "Dr. Bhavya ", position: "MBBS, MS Gen. Surgery(Gold Medalist) DNB Gen. Surgery FMAS, PGC Breast Surgery" },
+]
+    },
+    { 
+      icon: Stethoscope, 
+      title: "General Medicine", 
+      count: "1", 
+      color: "from-amber-600 to-amber-700", 
+      members: [
+        { name: "Dr. Rahil Ahmed", position: "MD. General Medicine" },
+]
+    },
+    { 
+      icon: Award, 
+      title: "Super Specialists", 
+      count: "15", 
       color: "from-red-600 to-red-700", 
       members: [
-        { name: "Dr. John Smith", position: "Emergency Physician" },
-        { name: "Dr. Sarah Johnson", position: "Trauma Surgeon" },
+        { name: "Dr. Subham Sharma", position: "MBBS, MD. DM Cardiology (AIIMS)" },
+        { name: "Dr. Deepika Saroha", position: "MBBS, MD. DM Neurology, (AIIMS)" },
         { name: "Dr. Michael Brown", position: "ER Specialist" },
-        { name: "Dr. Emily Wilson", position: "Pediatric Emergency" }
+        { name: "Dr, Jyoti Mehta ", position: "MBBS, MD, Radiation Oncology" },
+        { name: "Dr. Annu Rajpurohit ", position: "MBBS, MO, DN Medical Oncology (TaTa Memorial Hosp.) Mumbai" },
+        { name: "Dr. Naina Kumar Agrawal ", position: "MBBS, MS, MCH (Surgical Oncology) Assistant Professor, SMS Jaipur" },
+        { name: "Dr. Rishi Yadav ", position: "MBBS, MD Pulmonary& Critical Care Medicine" },
+        { name: "Dr. Akhilesh Humnekar ", position: "MBBS, MS Plastic & Cosmetics Surgeon (AIIMS)" },
+        { name: "Dr. Peeyush Kesharwani ", position: "MBBS, MSMCH Cardiothoaric ancVascular Surgery (Safdarjung Delhi)" },
+        { name: "Dr. Shrya Shah ", position: "MBBS, MD Clinical Nutritionist" },
+        { name: "Dr. Shivam Singh ", position: "MBBS, BASLP, MASLP (Hearing & Speech)" },
+        { name: "Dr. Bhakti Arora Kapoor ", position: "MBBS, MSc.Food Science &Nutrition" },
+        { name: "Dr. Rainee Pagaria ", position: "MBBS, B.D.S (Datta Meghe Institute Of Medical Science)C/o PAGARIA DENTAL CLINICBALAGHAT" },
+        { name: "Dr. Shulabh Pagaria ", position: "MBBS, B.D.S, M.D.S(Pedodontist)C/o PAGARIA DENTAL CLINICBALAGHAT" },
+        { name: "Dr. Parth Jethwani", position: "MBBS MD DM Endocrinology (AIIMS)" },
+  
       ]
     }
   ];

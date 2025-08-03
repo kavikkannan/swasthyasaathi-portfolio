@@ -109,7 +109,7 @@ export default function GalleryPage() {
       />
 
       {/* Stats Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
+      {/* <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
@@ -122,7 +122,7 @@ export default function GalleryPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Gallery Grid */}
       <section className="py-20">

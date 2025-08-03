@@ -5,7 +5,6 @@ interface HeroSectionProps {
   title: string
   subtitle: string
   description: string
-  buttonText?: string
   buttonLink?: string
   showStats?: boolean
 }
@@ -14,7 +13,6 @@ export default function HeroSection({
   title,
   subtitle,
   description,
-  buttonText = "Learn More",
   buttonLink = "#",
   showStats = false,
 }: HeroSectionProps) {
@@ -42,16 +40,7 @@ export default function HeroSection({
           <p className="text-blue-100 text-lg md:text-xl mb-8 max-w-3xl mx-auto leading-relaxed">{description}</p>
 
           {/* CTA Button */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Button
-              size="lg"
-              className="bg-white text-blue-600 hover:bg-blue-50 font-semibold px-8 py-3 rounded-full hover-scale group"
-            >
-              {buttonText}
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-          </div>
-
+          
           {/* Stats Section */}
           {showStats && (
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">

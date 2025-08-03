@@ -21,6 +21,7 @@ import {
   X, 
   Apple, 
   FileText,
+  Ruler,
   Eye,
   Ear,
   Brain,
@@ -112,8 +113,8 @@ export default function HomePage() {
     {
       icon: Brain,
       title: "Mental Health",
-      description: "Expert screening via internationally validated questionnaires with complete privacy protection.",
-      details: "Addressing stress, anxiety, learning disorders in 1 in 5 children and adolescents.",
+      description: "Supportive screening and awareness for emotional and psychological well-being.",
+      details: "Focuses on early identification of anxiety, stress, depression, and behavioral issues with referral pathways.",
     },
     {
       icon: Stethoscope,
@@ -125,9 +126,22 @@ export default function HomePage() {
       icon: BookOpen,
       title: "Health Education",
       description: "Comprehensive health education covering hygiene, nutrition, mental health, and safety.",
-      details: "10 key areas including bullying prevention, substance abuse awareness, and first aid.",
+      details: "Includes CPR training Road Safety  substance abuse awareness, menstrual hygiene, adolescent health, and first aid.",
     },
-  ]/* 
+    {
+      icon: Ruler, // e.g., from lucide-react or any icon set you're using
+      title: "Anthropometry",
+      description: "Measurement of physical dimensions to assess growth and development in children.",
+      details: "Includes height, weight, BMI, and head circumference to monitor nutritional and developmental status.",
+    },
+    {
+      icon: Stethoscope,
+      title: "Detailed Medical Examination",
+      description: "Comprehensive check-up to detect existing health conditions and ensure early intervention.",
+      details: "Covers vision, hearing, dental, cardiac, respiratory, and musculoskeletal evaluations.",
+    },
+  ]
+  /* 
   const services = [
     {
       icon: "📏",
@@ -505,7 +519,7 @@ export default function HomePage() {
                   <div>
                     <h3 className="font-bold text-gray-800 mb-2">Detailed Health Report</h3>
                     <p className="text-gray-600 text-sm">
-                      Comprehensive 11-page report for each child with actionable insights.
+                      Comprehensive 12-page report for each child with actionable insights.
                     </p>
                   </div>
                 </div>

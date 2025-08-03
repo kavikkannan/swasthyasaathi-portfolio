@@ -5,59 +5,86 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { DownloadButton } from "@/components/DownloadButton"
 import {
-  Stethoscope,
-  Users,
-  GraduationCap,
-  Heart,
-  Shield,
   Activity,
   UserCheck,
   BookOpen,
   Ambulance,
   ArrowRight,
+  Eye,
+  Ear,
+  GraduationCap,
+  HeartPulse,
+  Stethoscope
 } from "lucide-react"
 
 export default function WhatWeDoPage() {
   const services = [
     {
-      icon: Stethoscope,
-      title: "Primary Healthcare",
-      description:
-        "Comprehensive primary care services including consultations, diagnostics, and treatment for common health conditions.",
-      features: ["General Consultations", "Health Check-ups", "Chronic Disease Management", "Preventive Care"],
+      icon: Activity,
+      title: "Anthropometric Examination",
+      description: "Assessing growth and nutrition status through comprehensive measurements and tests.",
+      features: [
+        "Growth assessment using weight and height measurements",
+        "Nutrition status evaluation",
+        "Hand grip strength testing",
+        "Body Mass Index (BMI) analysis"
+      ],
     },
     {
-      icon: Users,
-      title: "Community Outreach",
-      description:
-        "Mobile healthcare units and community programs bringing medical services directly to underserved areas.",
-      features: ["Mobile Clinics", "Health Camps", "Door-to-door Services", "Rural Healthcare"],
+      icon: Eye,
+      title: "Vision Screening",
+      description: "Early detection and prevention of vision problems in children.",
+      features: [
+        "Comprehensive eye examinations",
+        "Color vision testing",
+        "Refractive error detection",
+        "Vitamin A deficiency screening"
+      ],
+    },
+    {
+      icon: Ear,
+      title: "Hearing Screening",
+      description: "Early identification of hearing impairments in children.",
+      features: [
+        "Pure Tone Audiometry",
+        "Otoscopy examination",
+        "Speech development assessment",
+        "Academic impact evaluation"
+      ],
+    },
+    {
+      icon: Stethoscope,
+      title: "Dental Examination",
+      description: "Comprehensive oral health assessment and care.",
+      features: [
+        "Dental health evaluation",
+        "Oral hygiene assessment",
+        "Preventive dental care",
+        "Impact on quality of life assessment"
+      ],
+    },
+    {
+      icon: HeartPulse,
+      title: "Mental Health & Wellbeing",
+      description: "Supporting emotional and psychological health.",
+      features: [
+        "Mental health assessment",
+        "Emotional wellbeing evaluation",
+        "Daily activity impact analysis",
+        "Sleep quality assessment"
+      ],
     },
     {
       icon: GraduationCap,
       title: "Health Education",
-      description:
-        "Educational programs and workshops to promote health awareness and disease prevention in communities.",
-      features: ["Health Workshops", "Awareness Campaigns", "School Programs", "Digital Resources"],
-    },
-    {
-      icon: Heart,
-      title: "Maternal & Child Care",
-      description: "Specialized care for mothers and children, ensuring healthy pregnancies and child development.",
-      features: ["Prenatal Care", "Child Immunization", "Nutrition Programs", "Growth Monitoring"],
-    },
-    {
-      icon: Shield,
-      title: "Preventive Medicine",
-      description: "Focus on disease prevention through screenings, vaccinations, and lifestyle counseling.",
-      features: ["Health Screenings", "Vaccination Drives", "Lifestyle Counseling", "Risk Assessment"],
-    },
-    {
-      icon: Activity,
-      title: "Emergency Response",
-      description: "24/7 emergency medical services and disaster response capabilities for critical situations.",
-      features: ["Emergency Care", "Ambulance Services", "Disaster Response", "Critical Care"],
-    },
+      description: "Comprehensive health education for disease prevention and healthy living.",
+      features: [
+        "Hand hygiene practices",
+        "Nutrition and diet education",
+        "Physical activity guidance",
+        "First aid and safety training"
+      ],
+    }
   ]
 
   const programs = [
@@ -130,7 +157,7 @@ export default function WhatWeDoPage() {
       </section>
 
       {/* Featured Programs */}
-      <section className="py-20 bg-gray-50">
+      {/* <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-800 mb-4">Featured Programs</h2>

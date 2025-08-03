@@ -143,17 +143,17 @@ export default function MissionPage() {
             {[
               {
                 goal: "50,000+",
-                description: "Individuals reached through health programs by 2025",
+                description: "Students reached through health programs by 2026",
                 icon: Users,
               },
               {
                 goal: "100+",
-                description: "Community health centers established",
+                description: " Schools approached",
                 icon: Globe,
               },
               {
-                goal: "95%",
-                description: "Patient satisfaction rate maintained",
+                goal: "100%",
+                description: "Follow up of red and yellow patients",
                 icon: Heart,
               },
             ].map((goal, index) => (

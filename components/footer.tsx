@@ -3,25 +3,25 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Separator } from "@/components/ui/separator"
-import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin, Heart, Users, Shield, Award } from "lucide-react"
+import { Facebook, Instagram, Mail, Phone, MapPin, Heart, Users, Shield, Award } from "lucide-react"
 
 export default function Footer() {
   const quickLinks = [
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about" },
-    { name: "Services", href: "/services" },
-    { name: "How It Works", href: "/how-it-works" },
+    { name: "Services", href: "/what-we-do" },
+    { name: "Gallery", href: "/gallery" },
     { name: "Contact", href: "/contact" },
   ]
 
   const services = [
-    { name: "Growth Parameters", href: "/services#growth" },
-    { name: "Medical Checkups", href: "/services#medical" },
-    { name: "Eye Examination", href: "/services#eye" },
-    { name: "ENT Check", href: "/services#ent" },
-    { name: "Audiometry", href: "/services#audio" },
-    { name: "Dental Screening", href: "/services#dental" },
-    { name: "Mental Health", href: "/services#mental" },
+    { name: "Growth Parameters", href: "/what-we-do" },
+    { name: "Medical Checkups", href: "/what-we-do" },
+    { name: "Eye Examination", href: "/what-we-do" },
+    { name: "ENT Check", href: "/what-we-do" },
+    { name: "Audiometry", href: "/what-we-do" },
+    { name: "Dental Screening", href: "/what-we-do" },
+    { name: "Mental Health", href: "/what-we-do" },
   ]
 
   const stats = [
@@ -56,6 +56,12 @@ export default function Footer() {
               and comprehensive health education directly to your school campus.
             </p>
             <div className="flex space-x-4">
+            <Link
+              href="https://www.instagram.com/swasthya_saathi/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-blue-100 transition-colors hover-scale"
+            >
               <Button
                 size="sm"
                 variant="outline"
@@ -63,13 +69,14 @@ export default function Footer() {
               >
                 <Facebook className="h-4 w-4" />
               </Button>
-              <Button
-                size="sm"
-                variant="outline"
-                className="border-gray-600 text-gray-300 hover:bg-gray-800 bg-transparent"
-              >
-                <Twitter className="h-4 w-4" />
-              </Button>
+            </Link>
+
+              <Link
+              href="https://www.instagram.com/swasthya_saathi/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-blue-100 transition-colors hover-scale"
+            >
               <Button
                 size="sm"
                 variant="outline"
@@ -77,13 +84,9 @@ export default function Footer() {
               >
                 <Instagram className="h-4 w-4" />
               </Button>
-              <Button
-                size="sm"
-                variant="outline"
-                className="border-gray-600 text-gray-300 hover:bg-gray-800 bg-transparent"
-              >
-                <Linkedin className="h-4 w-4" />
-              </Button>
+            </Link>
+              
+             
             </div>
           </div>
 
@@ -127,17 +130,22 @@ export default function Footer() {
             <div className="space-y-4 mb-6">
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-blue-400" />
-                <span className="text-gray-300">+91-7470756065</span>
+                <span className="text-gray-300">+91-7488379217</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-blue-400" />
-                <span className="text-gray-300 text-sm">swasthyasaathihealthcare@gmail.com</span>
+                <span className="text-gray-300 text-sm">info@swasthyasathi.com</span>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-blue-400 mt-0.5" />
-                <span className="text-gray-300 text-sm">
-                  Based in Chhattisgarh and Rajasthan, serving schools across India
-                </span>
+                <a 
+  href="https://www.google.com/maps/place/Shree+Narayana+Hospital/@21.2630399,81.6471458,1243m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3a28dd7f2406a287:0xe2b4dcc9e85b22a8!8m2!3d21.2630399!4d81.6497207!16s%2Fg%2F119w6j9ng?entry=ttu&g_ep=EgoyMDI1MDczMC4wIKXMDSoASAFQAw%3D%3D" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="text-gray-300 text-sm"
+>
+  Based in Chhattisgarh and Rajasthan, serving schools across India
+</a>
               </div>
             </div>
 

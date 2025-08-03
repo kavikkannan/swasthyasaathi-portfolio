@@ -90,18 +90,34 @@ export default function AboutPage() {
               <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
                 <p>
                   SwasthyaSaathi was born from a simple yet powerful vision: to bridge the gap between world-class
-                  medical expertise and community healthcare needs. Founded in 2018 by a group of passionate AIIMS
+                  medical expertise and community healthcare needs. Founded in 2024 by a group of passionate AIIMS
                   alumni, we recognized the urgent need for accessible, quality healthcare in underserved communities.
                 </p>
                 <p>
-                  Our journey began with a single mobile health unit serving rural areas around Delhi. Today, we've
-                  grown into a comprehensive healthcare organization that combines traditional medical practices with
-                  innovative approaches to reach those who need care the most.
+                At School Swasthya Saathi, we believe that
+healthy children are the foundation of a thriving
+future. Guided by a team Of visionary doctors
+who are led by specialists and super specialists
+trained at AIIMS, we have reimagined school
+healthcare to empower every child to grow,
+learn, and excel in a nurturing environment.
                 </p>
                 <p>
-                  What sets us apart is our commitment to not just treating illness, but preventing it through
-                  education, early intervention, and community empowerment. We believe that healthcare is not just about
-                  medicine—it's about building healthier, stronger communities.
+                Our mission is to make preventive healthcare
+accessible, affordable, and seamlessly
+integrated into school communities. By building
+strong partnerships between schools and
+parents, we ensure that health and education
+go hand in hand, creating a brighter, healthier
+tomorrow for the next generation.
+                </p>
+                <p>
+                While working in a tertiary healthcare center,
+our founders came across many cases in
+children which would have a better prognosis if
+it was diagnosed early. But sadly, the numbers
+kept increasing over time. It was a time to
+brainstorm over the reasons for the problem.
                 </p>
               </div>
             </div>
@@ -142,7 +158,7 @@ export default function AboutPage() {
       </section>
 
       {/* Timeline */}
-      <section className="py-20">
+      {/* <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-800 mb-4">Our Journey</h2>
@@ -180,7 +196,7 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Values & Recognition */}
       <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-700 text-white">

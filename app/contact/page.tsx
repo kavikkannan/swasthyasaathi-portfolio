@@ -69,8 +69,7 @@ export default function ContactPage() {
                           General Inquiries: info@swasthyasathi.com
                           <br />
                           Website: www.swasthyasathi.com
-                          <br />
-                          Medical Services: medical@swasthyasathi.com
+
                         </p>
                       </div>
                     </div>
@@ -86,11 +85,8 @@ export default function ContactPage() {
                       <div>
                         <h3 className="text-lg font-semibold text-gray-800 mb-2">Call Us</h3>
                         <p className="text-gray-600">
-                          Main Office: +91 98765 43210
-                          <br />
-                          Emergency: +91 98765 43211
-                          <br />
-                          Toll Free: 1800-123-4567
+                          Main Office: <br/> +91 7488379217
+                      
                         </p>
                       </div>
                     </div>
@@ -106,11 +102,8 @@ export default function ContactPage() {
                       <div>
                         <h3 className="text-lg font-semibold text-gray-800 mb-2">Office Hours</h3>
                         <p className="text-gray-600">
-                          Monday - Friday: 9:00 AM - 6:00 PM
-                          <br />
-                          Saturday: 9:00 AM - 2:00 PM
-                          <br />
-                          Sunday: Emergency Services Only
+                          Monday - Sunday: <br /> 9:00 AM - 6:00 PM
+                       
                         </p>
                       </div>
                     </div>
@@ -136,7 +129,7 @@ export default function ContactPage() {
           <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
             <div className="h-96">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224346.48129308136!2d77.04417!3d28.527554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1642678901234!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722.6303903999997!2d81.6471458!3d21.2630399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28dd7f2406a287%3A0xe2b4dcc9e85b22a8!2sShree%20Narayana%20Hospital!5e0!3m2!1sen!2sin!8m2!3d21.2630399!4d81.6497207!16s%2Fg%2F119w6j9ng?entry=ttu"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -151,7 +144,7 @@ export default function ContactPage() {
       </section>
 
       {/* Emergency Contact */}
-      <section className="py-20 bg-gradient-to-r from-red-500 to-red-600 text-white">
+      {/* <section className="py-20 bg-gradient-to-r from-red-500 to-red-600 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-6">Medical Emergency?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
@@ -168,7 +161,7 @@ export default function ContactPage() {
             </Button>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </div>

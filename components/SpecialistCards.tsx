@@ -102,31 +102,7 @@ export default function SpecialistCards() {
 
 
 
-    { 
-      icon: Heart, 
-      title: "Cardiologists", 
-      count: "4", 
-      color: "from-pink-600 to-pink-700", 
-      members: [
-        { name: "Dr. James Wilson", position: "Cardiologist" },
-        { name: "Dr. Emma Davis", position: "Cardiologist" },
-        { name: "Dr. Ryan Miller", position: "Cardiothoracic Surgeon" },
-        { name: "Dr. Olivia Martin", position: "Pediatric Cardiologist" }
-      ]
-    },
-    { 
-      icon: Brain, 
-      title: "Mental Health Experts", 
-      count: "5", 
-      color: "from-indigo-600 to-indigo-700", 
-      members: [
-        { name: "Dr. Sophia Chen", position: "Clinical Psychologist" },
-        { name: "Dr. David Kim", position: "Psychotherapist" },
-        { name: "Dr. Priya Patel", position: "Counseling Psychologist" },
-        { name: "Dr. Michael Brown", position: "Psychiatric Nurse" },
-        { name: "Dr. Emily Wilson", position: "Art Therapist" }
-      ]
-    },
+   
 
 
 

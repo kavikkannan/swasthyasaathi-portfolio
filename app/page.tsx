@@ -302,10 +302,12 @@ export default function HomePage() {
               className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8 animate-fadeInUp"
               style={{ animationDelay: "1.2s" }}
             >
-              <Button size="lg" className="btn-secondary group">
-                Schedule Consultation
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqWQvQsau-xmZLsllqF9FmHpDZ89UDf2i5Z_ZvsltNabb_UQ/viewform" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="btn-secondary group">
+                  Schedule Consultation
+                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </a>
               <Button
                 size="lg"
                 variant="outline"
@@ -388,6 +390,33 @@ export default function HomePage() {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Video Section */}
+      <section className="py-12 md:py-16 bg-gradient-to-b from-white to-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-8 md:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+              Watch Our Story
+            </h2>
+            <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
+              Learn more about our mission and how we're transforming healthcare for students.
+            </p>
+          </div>
+          
+          <div className="max-w-4xl mx-auto rounded-xl overflow-hidden shadow-2xl bg-gray-100">
+            <div className="relative aspect-video w-full">
+              <iframe 
+                src="https://drive.google.com/file/d/1cXF80smGS0ZZ8GIsSD3SvUZOz5xJcftS/preview" 
+                className="absolute top-0 left-0 w-full h-full"
+                allow="autoplay"
+                title="Swasthyasaathi Video"
+                allowFullScreen
+                loading="lazy"
+              ></iframe>
+            </div>
           </div>
         </div>
       </section>
@@ -572,12 +601,14 @@ export default function HomePage() {
             including Sundays and holidays, ensuring your classes are never missed!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              size="lg"
-              className="bg-white text-orange-600 hover:bg-gray-100 shadow-xl transform hover:scale-105 transition-all duration-200"
-            >
-              Partner With Us
-            </Button>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScqEFev9bw8_kz0b5nDfbif8_YgiY4kkcPG9ELy9kELQEwiGQ/viewform?pli=1&authuser=0" target="_blank" rel="noopener noreferrer">
+              <Button
+                size="lg"
+                className="bg-white text-orange-600 hover:bg-gray-100 shadow-xl transform hover:scale-105 transition-all duration-200 w-full"
+              >
+                Partner With Us
+              </Button>
+            </a>
             <Button
               size="lg"
               variant="outline"

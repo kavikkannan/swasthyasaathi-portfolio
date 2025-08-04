@@ -252,12 +252,14 @@ export default function WhatWeDoPage() {
             Whether you need immediate care or want to learn about our programs, we're here to help.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              size="lg"
-              className="bg-orange-500 hover:bg-orange-600 text-white shadow-xl transform hover:scale-105 transition-all duration-200"
-            >
-              Book Consultation
-            </Button>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqWQvQsau-xmZLsllqF9FmHpDZ89UDf2i5Z_ZvsltNabb_UQ/viewform" target="_blank" rel="noopener noreferrer">
+              <Button
+                size="lg"
+                className="bg-orange-500 hover:bg-orange-600 text-white shadow-xl transform hover:scale-105 transition-all duration-200 w-full"
+              >
+                Book Consultation
+              </Button>
+            </a>
             <DownloadButton />
           </div>
         </div>

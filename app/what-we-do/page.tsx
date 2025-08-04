@@ -14,7 +14,8 @@ import {
   Ear,
   GraduationCap,
   HeartPulse,
-  Stethoscope
+  Stethoscope,
+  FileSearch
 } from "lucide-react"
 
 export default function WhatWeDoPage() {
@@ -83,6 +84,17 @@ export default function WhatWeDoPage() {
         "Nutrition and diet education",
         "Physical activity guidance",
         "First aid and safety training"
+      ],
+    },
+    {
+      icon: FileSearch,
+      title: "Medical Examinations",
+      description: "Comprehensive medical check-ups and diagnostic services for all age groups.",
+      features: [
+        "Routine health check-ups",
+        "Diagnostic testing and screening",
+        "Preventive health assessments",
+        "Specialized medical consultations"
       ],
     }
   ]

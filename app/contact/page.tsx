@@ -122,7 +122,7 @@ export default function ContactPage() {
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-800 mb-4">Find Us</h2>
             <p className="text-xl text-gray-600">
-              Located in the heart of New Delhi, easily accessible by public transport.
+              Located in the heart of Chhattisgarh, easily accessible by public transport.
             </p>
           </div>
 

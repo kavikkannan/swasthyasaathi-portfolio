@@ -184,7 +184,6 @@ export default function SpecialistCards() {
       members: [
         { name: "Dr. Subham Sharma", position: "MBBS, MD. DM Cardiology (AIIMS)" },
         { name: "Dr. Deepika Saroha", position: "MBBS, MD. DM Neurology, (AIIMS)" },
-        { name: "Dr. Michael Brown", position: "ER Specialist" },
         { name: "Dr, Jyoti Mehta ", position: "MBBS, MD, Radiation Oncology" },
         { name: "Dr. Annu Rajpurohit ", position: "MBBS, MO, DN Medical Oncology (TaTa Memorial Hosp.) Mumbai" },
         { name: "Dr. Naina Kumar Agrawal ", position: "MBBS, MS, MCH (Surgical Oncology) Assistant Professor, SMS Jaipur" },

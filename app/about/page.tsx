@@ -1,3 +1,4 @@
+'use client'
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import HeroSection from "@/components/hero-section"
@@ -5,8 +6,21 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Users, Award, Calendar, MapPin, Star, CheckCircle } from "lucide-react"
 import TeamMemberCard from "./TeamMemberCard"
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation, Autoplay } from 'swiper/modules'
+import 'swiper/css'
+import 'swiper/css/navigation'
 
+const images = [
+  'https://schoolhealthpro.com/wp-content/uploads/2024/03/PHOTO-2023-10-01-08-59-04.jpg',
+  'https://schoolhealthpro.com/wp-content/uploads/2024/03/PHOTO-2023-12-17-09-36-24.jpg',
+  'https://schoolhealthpro.com/wp-content/uploads/2024/03/PHOTO-2024-01-03-16-45-42.jpg',
+  'https://schoolhealthpro.com/wp-content/uploads/2024/03/PHOTO-2024-01-03-16-46-22.jpg',
+  'https://schoolhealthpro.com/wp-content/uploads/2024/03/PHOTO-2024-01-03-16-49-34.jpg',
+  'https://schoolhealthpro.com/wp-content/uploads/2024/08/f4f2f08c-4816-4503-8f96-3c02f19d6cd6.jpg'
+]
 export default function AboutPage() {
+  
   const team = [
     {
       name: "Dr. Tanmay Motiwala",
@@ -65,10 +79,10 @@ export default function AboutPage() {
   ]
 
   const achievements = [
-    { icon: Users, number: "25,000+", label: "Lives Impacted" },
-    { icon: MapPin, number: "150+", label: "Communities Served" },
-    { icon: Calendar, number: "6+", label: "Years of Service" },
-    { icon: Award, number: "15+", label: "Awards Received" },
+    { icon: Users, number: "4,000+", label: "Lives Impacted" },
+    { icon: MapPin, number: "20+", label: "Cities Served" },
+    { icon: Calendar, number: "2+", label: "Years of Service" },
+    //{ icon: Award, number: "2+", label: "Awards Received" },
   ]
 
   return (
@@ -136,6 +150,7 @@ brainstorm over the reasons for the problem.
             </div>
           </div>
         </div>
+        
       </section>
 
       {/* Leadership Team */}
@@ -196,9 +211,9 @@ brainstorm over the reasons for the problem.
             </div>
           </div>
         </div>
-      </section> */}
+      </section> 
 
-      {/* Values & Recognition */}
+      {/* Values & Recognition 
       <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12">
@@ -241,6 +256,87 @@ brainstorm over the reasons for the problem.
         </div>
       </section>
 
+      */}
+      <section className="py-12">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-8">Media Features</h2>
+          <div className="relative">
+            <Swiper
+              modules={[Navigation, Autoplay]}
+              spaceBetween={20}
+              slidesPerView={3}
+              centeredSlides={true}
+              loop={true}
+              autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+              }}
+              navigation={true}
+              breakpoints={{
+                320: {
+                  slidesPerView: 1,
+                  spaceBetween: 20
+                },
+                640: {
+                  slidesPerView: 2,
+                  spaceBetween: 20
+                },
+                1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 30
+                }
+              }}
+              className="gallery-swiper"
+            >
+              {images.filter(Boolean).map((image, index) => (
+                <SwiperSlide key={index} className="transition-all duration-300">
+                  <div className="relative pt-[100%] rounded-xl overflow-hidden shadow-lg">
+                    <img 
+                      src={image} 
+                      alt={`Gallery image ${index + 1}`}
+                      className="absolute top-0 left-0 w-full h-full object-fit"
+                    />
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </div>
+        <style jsx global>{`
+          .gallery-swiper {
+            padding: 30px 0;
+          }
+          .gallery-swiper .swiper-slide {
+            opacity: 0.6;
+            transform: scale(0.8) translateY(10px);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            filter: brightness(0.95);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+          }
+          .gallery-swiper .swiper-slide-active {
+            opacity: 1;
+            transform: scale(1) translateY(0);
+            z-index: 2;
+            filter: brightness(1);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+          }
+          .gallery-swiper .swiper-slide-prev,
+          .gallery-swiper .swiper-slide-next {
+            opacity: 0.8;
+            transform: scale(0.9) translateY(5px);
+            filter: brightness(0.98);
+          }
+          .gallery-swiper .swiper-button-next,
+          .gallery-swiper .swiper-button-prev {
+            color: #3b82f6;
+            --swiper-navigation-size: 24px;
+          }
+          .gallery-swiper .swiper-button-next:after,
+          .gallery-swiper .swiper-button-prev:after {
+            font-weight: bold;
+          }
+        `}</style>
+      </section>
       <Footer />
     </div>
   )

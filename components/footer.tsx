@@ -57,7 +57,7 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
             <Link
-              href="https://www.instagram.com/swasthya_saathi/"
+              href="https://www.facebook.com/share/1CBWDb5Bfm/?mibextid=wwXIfr"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-blue-100 transition-colors hover-scale"

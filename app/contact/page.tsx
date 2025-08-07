@@ -66,7 +66,7 @@ export default function ContactPage() {
                       <div>
                         <h3 className="text-lg font-semibold text-gray-800 mb-2">Email Us</h3>
                         <p className="text-gray-600">
-                          General Inquiries: info@swasthyasathi.com
+                          General Inquiries: contact.swasthyasaathi@gmail.com
                           <br />
                           Website: www.swasthyasathi.com
 
@@ -85,7 +85,7 @@ export default function ContactPage() {
                       <div>
                         <h3 className="text-lg font-semibold text-gray-800 mb-2">Call Us</h3>
                         <p className="text-gray-600">
-                          Main Office: <br/> +91 7488379217
+                          Main Office: <br/> +91 7000445921
                       
                         </p>
                       </div>
